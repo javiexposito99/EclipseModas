@@ -1,0 +1,124 @@
+/* B U S C A R   T E X T O */
+.input-toolbar {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Estilo del input */
+  .textoBuscar {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px; /* Ajusta según sea necesario */
+    margin-left: 74px;
+  }
+
+/* C A R T A S */
+.cartas ion-buttons ion-button {
+    background-color: #fff;
+}
+
+#carta-ropaMujer img {
+    width: 100%;
+  
+}
+
+
+/* home.page.scss */
+ion-toolbar {
+    --background: #79a1e7; /* Color de fondo de la barra de herramientas */
+}
+  
+ion-title {
+    color: #fff; /* Color del título */
+}
+  
+.footer ion-button {
+    --color: #fff; /* Color del ícono */
+    background-color:#79a1e7;
+}
+
+#buscar{
+    color: #fff;
+    padding-right: 10px;
+}
+
+/*C A T E G O R I A S*/  
+
+.productos ion-grid {
+    height: 840px;
+}
+
+.productos ion-row {
+    height: 100%;
+}
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.categorias ion-col {
+    width: 100%;
+    
+    margin-bottom: 10px;
+}
+
+#tamaño{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* F O T E E R */
+.footer {
+    text-align: center;
+    margin-bottom: 0;
+    
+}
+
+.titulo-footer{
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+}
+
+.footer {
+    ion-toolbar {
+      display: flex;
+      justify-content: center; /* Centra el contenido del ion-toolbar horizontalmente */
+      align-items: center; /* Centra el contenido del ion-toolbar verticalmente */
+      
+      ion-title {
+        flex: 1;
+        text-align: center; /* Centra el texto del título */
+        font-size: 30px;
+      }
+      
+      .redes {
+        display: flex;
+        justify-content: center; /* Centra los botones horizontalmente */
+        width: 100%; /* Asegura que los botones estén centrados dentro del ion-toolbar */
+        
+        ion-button {
+          --background: #79a1e7; /* Fondo transparente para los botones */
+          --color: #fff; /* Color del texto del botón */
+          margin: 0 5px; /* Espaciado entre los botones */
+          
+          ion-icon {
+            font-size: 25px; /* Tamaño de los iconos */
+            color: #fff; /* Color de los iconos */
+            
+          }
+        }
+      }
+    }
+  }
+  
+
+.footer #instagram {
+    width: 25px;
+    height: 25px;   
+}

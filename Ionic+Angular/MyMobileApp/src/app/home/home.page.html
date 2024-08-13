@@ -1,0 +1,146 @@
+<head>
+  <!-- Otros enlaces y metadatos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="m1"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Eclipse Moda</ion-title>
+    <ion-buttons slot="end">
+      <ion-buttons (click)="onBuscar()">
+        <ion-icon slot="icon-only" name="search" id="buscar"></ion-icon>
+      </ion-buttons>
+    </ion-buttons>
+  </ion-toolbar>
+  <!-- Input para escribir texto -->
+  <ion-toolbar *ngIf="showInput" class="input-toolbar">
+    <ion-input class="textoBuscar" [(ngModel)]="inputText" placeholder="  Escribe aquí..."></ion-input>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- C A R T A S -->
+<ion-buttons id="cartas" class="cartas">
+  <ion-button>
+    <ion-card id="carta-home">
+      <img alt="Silhouette of mountains" src="https://www.shutterstock.com/image-vector/new-collection-ink-brush-vector-260nw-1777079918.jpg" />
+      <ion-card-header>
+        <ion-card-title>New Collection</ion-card-title>
+        <ion-card-subtitle>"Shop the New Arrivals Now"</ion-card-subtitle>
+      </ion-card-header>
+  
+      <ion-card-content>
+        Pincha aquí y encontrarás todas las novedades de la nueva colección de Eclipse Moda.
+      </ion-card-content>
+    </ion-card>
+  </ion-button>
+</ion-buttons>
+  
+<ion-buttons>
+  <ion-button>
+    <ion-card id="carta-ropaHombre">
+      <img alt="Silhouette of mountains" src="https://creacuervos.com/wp-content/uploads/2022/01/tiendas-moda-hombres-casa-caballeria.jpg" />
+      <ion-card-header>
+        <ion-card-title>Ropa Hombre</ion-card-title>
+        <ion-card-subtitle>"Style, Confidence, Distinction"</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Explora nuestra nueva colección para hombres: estilo y elegancia para cada momento. Viste con confianza y destaca con prendas únicas que reflejan tu personalidad.
+      </ion-card-content>
+    </ion-card>
+  </ion-button>
+</ion-buttons>
+
+<ion-buttons>
+  <ion-button>
+    <ion-card id="carta-ropaMujer">
+      <img alt="Silhouette of mountains" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSJy30mU-BOTxkbWB36MACqP9-H0lAK1stcA&s" />
+      <ion-card-header>
+        <ion-card-title>Ropa Mujer</ion-card-title>
+        <ion-card-subtitle>"Style, Elegance, Sexuality"</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Explora nuestra nueva colección para mujer: estilo, elegancia y sexualidad para cada momento. Viste con confianza y destaca con prendas únicas que reflejan tu caracte.
+      </ion-card-content>
+    </ion-card>
+  </ion-button>
+</ion-buttons>
+  
+<ion-buttons>
+  <ion-button>
+    <ion-card id="carta-ropaNiños">
+      <img alt="Silhouette of mountains" src="https://img.freepik.com/fotos-premium/compras-ninos-nina-rubia-mami-comprando-ropa-tienda-ropa-ninos_274719-493.jpg" />
+      <ion-card-header>
+        <ion-card-title>Ropa Infantil</ion-card-title>
+        <ion-card-subtitle>"Fashion, fun and comfort"</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Descubre nuestra nueva colección para niños: moda divertida y cómoda para cada aventura. Viste a tus pequeños con estilo y comodidad. 
+      </ion-card-content>
+    </ion-card>
+  </ion-button>
+</ion-buttons>
+
+<ion-buttons>
+  <ion-button>
+    <ion-card id="carta-rebajas">
+      <img alt="Silhouette of mountains" src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2016/11/208234-rebajas-black-friday-tiendas-ropa.jpg?tf=3840x" />
+      <ion-card-header>
+        <ion-card-title>Rebajas</ion-card-title>
+        <ion-card-subtitle>"Amazing Discounts on Your Favorite Fashion!"</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Descubre nuestras rebajas exclusivas y disfruta de descuentos irresistibles en las últimas tendencias. Renueva tu estilo con precios increíbles y ahorra en tus prendas favoritas hoy mismo. 
+      </ion-card-content>
+    </ion-card>
+  </ion-button>
+</ion-buttons>
+  
+
+  
+
+
+  <!-- F O O T E R -->
+
+  <ion-footer id="footer" class="footer">
+    <ion-toolbar id="titulo-footer" class="titulo-footer">
+      <ion-title>Eclipse Moda</ion-title>
+    </ion-toolbar>  
+    <ion-toolbar>  
+      <ion-buttons slot="end" class="redes">
+        <ion-button>
+          <ion-icon class="fa-brands fa-instagram"></ion-icon>
+        </ion-button>
+        <ion-button>
+          <ion-icon class="fa-brands fa-facebook"></ion-icon>
+        </ion-button>
+        <ion-button>
+          <ion-icon class="fa-brands fa-twitter"></ion-icon>
+        </ion-button>
+        <ion-button>
+          <ion-icon class="fa-brands fa-whatsapp"></ion-icon>
+        </ion-button>
+        <!-- Botón con la flecha hacia arriba -->
+        <ion-button (click)="scrollToTop()" shape="round">
+          <ion-icon class="fa-solid fa-arrow-up"></ion-icon>
+        </ion-button>      
+      </ion-buttons>
+    </ion-toolbar>
+    
+  </ion-footer>
+
+</ion-content>

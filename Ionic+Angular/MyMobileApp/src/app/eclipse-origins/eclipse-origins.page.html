@@ -1,0 +1,81 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="m1"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Eclipse Origins</ion-title>
+    <ion-buttons slot="end">
+      <ion-buttons (click)="onBuscar()">
+        <ion-icon slot="icon-only" name="search" id="buscar"></ion-icon>
+      </ion-buttons>
+    </ion-buttons>
+  </ion-toolbar>
+  <!-- Input para escribir texto -->
+  <ion-toolbar *ngIf="showInput" class="input-toolbar">
+    <ion-input class="textoBuscar" [(ngModel)]="inputText" placeholder="  Escribe aquí..."></ion-input>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Eclipse Origins</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <!-- C O N T E N I D O -->
+  <ion-header>
+    <ion-toolbar>
+      <ion-title> Moda que Marca la Diferencia </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content [fullscreen]="true" class="ion-padding">
+    <h1>"Tendencias Inéditas para un Estilo Único"</h1>
+  
+    <p>
+      Eclipse Origin es más que una tienda de ropa; es una experiencia de moda única que redefine el concepto de elegancia y estilo. Desde su fundación, Eclipse Origin se ha comprometido a ofrecer a sus clientes una selección exclusiva de prendas que no solo siguen las últimas tendencias, sino que también las establecen. Cada pieza en nuestra colección ha sido cuidadosamente curada para reflejar una estética contemporánea y sofisticada, con un enfoque en la calidad y el diseño innovador.
+    </p>
+    
+    <ion-toolbar class="imagenes">
+      <div class="primeraFoto">
+        <img src="https://www.022estudio.com/wp-content/uploads/2023/03/tiendas-de-ropa-y-retail-como-favorece-el-diseno-a-la-decision-de-compra-022-studio-scaled.jpg" alt="Tienda Uno">
+      </div>
+      <div class="segundaFoto">
+        <img src="https://www.elindependiente.com/wp-content/uploads/2022/04/comercio-ropa-scaled.jpg" alt="Tienda Dos">
+      </div>
+    </ion-toolbar>
+    
+  </ion-content>
+
+  <!-- F O O T E R -->
+
+  <ion-footer id="footer" class="footer">
+    <ion-toolbar id="titulo-footer" class="titulo-footer">
+      <ion-title>Eclipse Moda</ion-title>
+    </ion-toolbar>  
+    <ion-toolbar>  
+      <ion-buttons slot="end" class="redes">
+        <ion-button>
+          <ion-icon class="fa-brands fa-instagram"></ion-icon>
+        </ion-button>
+        <ion-button>
+          <ion-icon class="fa-brands fa-facebook"></ion-icon>
+        </ion-button>
+        <ion-button>
+          <ion-icon class="fa-brands fa-twitter"></ion-icon>
+        </ion-button>
+        <ion-button>
+          <ion-icon class="fa-brands fa-whatsapp"></ion-icon>
+        </ion-button>
+        <!-- Botón con la flecha hacia arriba -->
+        <ion-button (click)="scrollToTop()" shape="round">
+          <ion-icon class="fa-solid fa-arrow-up"></ion-icon>
+        </ion-button>      
+      </ion-buttons>
+    </ion-toolbar>
+    
+  </ion-footer>
+
+
+</ion-content>
